@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Square Bar — Box Dieline 12-Pack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #555;
+      padding: 32px;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    #dieline-frame {
+      background: #fff;
+      display: inline-block;
+      padding: 24px;
+    }
+    #dieline-svg {
+      display: block;
+    }
+    #annotation {
+      margin-top: 20px;
+      padding: 16px 20px;
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      font-size: 11px;
+      line-height: 1.6;
+      color: #333;
+      max-width: 4608px;
+    }
+    #annotation h2 {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 8px;
+    }
+    #annotation .cols {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    #annotation .col h3 {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    #annotation .col p, #annotation .col li {
+      font-size: 10px;
+      font-weight: 400;
+      color: #333;
+    }
+    #annotation ul { padding-left: 14px; }
+    .legend {
+      display: flex;
+      gap: 24px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+    }
+    .legend-swatch {
+      width: 24px;
+      height: 2px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="dieline-frame">
+
+  <!--
+    SVG DIELINE — The Square Bar 12-Pack Tuck-End Box
+    Units: mm (viewBox 1 unit = 1mm)
+    Rendered at 4px/mm → 4604 × 616px
+
+    Panel layout (left → right):
+    [GLUE 15mm] [SIDE B 424mm] [BACK 144mm] [SIDE A 424mm] [FRONT 144mm]
+    Total width: 1151mm
+
+    Y: [TOP FLAPS 40mm] [BODY 74mm] [BOTTOM FLAPS 40mm]
+    Total height: 154mm
+  -->
+  <svg id="dieline-svg"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 1151 154"
+       width="4604"
+       height="616">
+
+    <!-- ═══════════════════════════════════════════════
+         DESIGN LAYER — Fills + Artwork
+    ═══════════════════════════════════════════════ -->
+
+    <!-- Glue flap fill -->
+    <rect x="0" y="40" width="15" height="74" fill="#F5F2EC"/>
+
+    <!-- Side B body fill -->
+    <rect x="15" y="40" width="424" height="74" fill="#F5F2EC"/>
+    <!-- Side B top dust flap -->
+    <rect x="15" y="0" width="60" height="40" fill="#EDE9E0"/>
+    <!-- Side B bottom dust flap -->
+    <rect x="15" y="114" width="60" height="40" fill="#EDE9E0"/>
+
+    <!-- Back panel fill -->
+    <rect x="439" y="40" width="144" height="74" fill="#F5F2EC"/>
+
+    <!-- Side A body fill -->
+    <rect x="583" y="40" width="424" height="74" fill="#F5F2EC"/>
+    <!-- Side A top dust flap -->
+    <rect x="947" y="0" width="60" height="40" fill="#EDE9E0"/>
+    <!-- Side A bottom dust flap -->
+    <rect x="947" y="114" width="60" height="40" fill="#EDE9E0"/>
+
+    <!-- Front panel fill -->
+    <rect x="1007" y="40" width="144" height="74" fill="#F5F2EC"/>
+    <!-- Front top tuck flap (tuck tab rounded at top) -->
+    <path d="M 1007 40 H 1151 V 16 Q 1151 11 1146 11 H 1133 V 6 Q 1133 0 1127 0 H 1031 Q 1025 0 1025 6 V 11 H 1012 Q 1007 11 1007 16 Z"
+          fill="#EDE9E0"/>
+    <!-- Front bottom tuck flap (tuck tab rounded at bottom) -->
+    <path d="M 1007 114 H 1151 V 138 Q 1151 143 1146 143 H 1133 V 148 Q 1133 154 1127 154 H 1031 Q 1025 154 1025 148 V 143 H 1012 Q 1007 143 1007 138 Z"
+          fill="#EDE9E0"/>
+
+    <!-- ─────────────────────────────────────
+         FRONT PANEL ARTWORK
+         x=1007  y=40  w=144  h=74
+    ───────────────────────────────────── -->
+    <!-- Brand name -->
+    <text x="1079" y="60"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="900"
+          font-size="9"
+          letter-spacing="3.5"
+          fill="#1A1A18">THE SQUARE BAR</text>
+    <!-- Top rule -->
+    <line x1="1022" y1="64" x2="1136" y2="64" stroke="#1A1A18" stroke-width="0.3"/>
+    <!-- Tagline -->
+    <text x="1079" y="72"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="400"
+          font-size="5.5"
+          fill="#1A1A18">Real food. No shortcuts.</text>
+    <!-- Bottom rule -->
+    <line x1="1022" y1="76" x2="1136" y2="76" stroke="#1A1A18" stroke-width="0.3"/>
+    <!-- Variant placeholder rect -->
+    <rect x="1027" y="82" width="104" height="20" fill="#5D5B7D" rx="1.5"/>
+    <text x="1079" y="95"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="700"
+          font-size="6"
+          letter-spacing="2.5"
+          fill="#F5F2EC">PROTEIN</text>
+
+    <!-- ─────────────────────────────────────
+         BACK PANEL ARTWORK
+         x=439  y=40  w=144  h=74
+    ───────────────────────────────────── -->
+    <!-- Main headline -->
+    <text x="511" y="56"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="400"
+          font-style="italic"
+          font-size="5.2"
+          fill="#1A1A18">Most bars are chemistry experiments.</text>
+    <text x="511" y="62"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="400"
+          font-style="italic"
+          font-size="5.2"
+          fill="#1A1A18">This one isn't.</text>
+    <!-- Rule -->
+    <line x1="449" y1="66" x2="573" y2="66" stroke="#1A1A18" stroke-width="0.25"/>
+    <!-- Column headers -->
+    <text x="478" y="72"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="700"
+          font-size="4"
+          letter-spacing="0.8"
+          fill="#1A1A18">NOT IN HERE</text>
+    <text x="544" y="72"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="700"
+          font-size="4"
+          letter-spacing="0.8"
+          fill="#5D5B7D">WHAT IS</text>
+    <!-- Vertical divider -->
+    <line x1="511" y1="67" x2="511" y2="107" stroke="#C0BAB0" stroke-width="0.3"/>
+    <!-- Row 1 -->
+    <text x="478" y="79" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="300" font-size="4" fill="#888">Maltitol</text>
+    <text x="544" y="79" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="500" font-size="4" fill="#5D5B7D">Oats</text>
+    <!-- Row 2 -->
+    <text x="478" y="86" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="300" font-size="4" fill="#888">Soy isolate</text>
+    <text x="544" y="86" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="500" font-size="4" fill="#5D5B7D">Nuts</text>
+    <!-- Row 3 -->
+    <text x="478" y="93" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="300" font-size="4" fill="#888">Glycerol</text>
+    <text x="544" y="93" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="500" font-size="4" fill="#5D5B7D">Dates</text>
+    <!-- Row 4 -->
+    <text x="478" y="100" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="300" font-size="3.8" fill="#888">"Natural flavouring"</text>
+    <text x="544" y="100" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="500" font-size="4" fill="#5D5B7D">Sea salt</text>
+    <!-- Bottom rule -->
+    <line x1="449" y1="104" x2="573" y2="104" stroke="#1A1A18" stroke-width="0.25"/>
+    <!-- URL -->
+    <text x="511" y="110"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="300"
+          font-size="3.5"
+          letter-spacing="1.2"
+          fill="#999">squarebar.com</text>
+
+    <!-- ─────────────────────────────────────
+         SIDE A ARTWORK
+         x=583  y=40  w=424  h=74
+    ───────────────────────────────────── -->
+    <!-- Top rule -->
+    <line x1="600" y1="53" x2="990" y2="53" stroke="#1A1A18" stroke-width="0.5"/>
+    <!-- Spine brand name -->
+    <text x="795" y="83"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="900"
+          font-size="13"
+          letter-spacing="18"
+          fill="#1A1A18">THE SQUARE BAR</text>
+    <!-- Bottom rule -->
+    <line x1="600" y1="103" x2="990" y2="103" stroke="#1A1A18" stroke-width="0.5"/>
+
+    <!-- ─────────────────────────────────────
+         SIDE B ARTWORK
+         x=15  y=40  w=424  h=74
+    ───────────────────────────────────── -->
+    <!-- Top rule -->
+    <line x1="32" y1="53" x2="422" y2="53" stroke="#1A1A18" stroke-width="0.5"/>
+    <!-- Spine brand name -->
+    <text x="227" y="83"
+          text-anchor="middle"
+          font-family="Montserrat, sans-serif"
+          font-weight="900"
+          font-size="13"
+          letter-spacing="18"
+          fill="#1A1A18">THE SQUARE BAR</text>
+    <!-- Bottom rule -->
+    <line x1="32" y1="103" x2="422" y2="103" stroke="#1A1A18" stroke-width="0.5"/>
+
+    <!-- ─────────────────────────────────────
+         GLUE FLAP label
+    ───────────────────────────────────── -->
+    <!-- Diagonal hatch pattern to indicate glue area -->
+    <line x1="0" y1="40" x2="15" y2="55" stroke="#C0BAB0" stroke-width="0.4"/>
+    <line x1="0" y1="55" x2="15" y2="70" stroke="#C0BAB0" stroke-width="0.4"/>
+    <line x1="0" y1="70" x2="15" y2="85" stroke="#C0BAB0" stroke-width="0.4"/>
+    <line x1="0" y1="85" x2="15" y2="100" stroke="#C0BAB0" stroke-width="0.4"/>
+    <line x1="0" y1="100" x2="15" y2="115" stroke="#C0BAB0" stroke-width="0.4"/>
+
+    <!-- ═══════════════════════════════════════════════
+         SAFE ZONE LAYER — 5mm inset from cut edges (green dashed)
+    ═══════════════════════════════════════════════ -->
+    <!-- Front body safe zone -->
+    <rect x="1012" y="45" width="134" height="64"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Back body safe zone -->
+    <rect x="444" y="45" width="134" height="64"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Side A body safe zone -->
+    <rect x="588" y="45" width="414" height="64"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Side B body safe zone -->
+    <rect x="20" y="45" width="414" height="64"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Glue flap safe zone (3mm each side) -->
+    <rect x="3" y="43" width="9" height="68"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Front top tuck safe zone -->
+    <rect x="1012" y="5" width="134" height="30"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Front bottom tuck safe zone -->
+    <rect x="1012" y="119" width="134" height="30"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Dust flap safe zones -->
+    <rect x="20" y="5" width="50" height="30"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <rect x="952" y="5" width="50" height="30"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <rect x="20" y="119" width="50" height="30"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <rect x="952" y="119" width="50" height="30"
+          fill="none" stroke="#00FF00" stroke-width="0.25" stroke-dasharray="2,2"/>
+
+    <!-- ═══════════════════════════════════════════════
+         BLEED LAYER — 3mm outset from cut edges (magenta dashed)
+    ═══════════════════════════════════════════════ -->
+    <!-- Front body bleed -->
+    <rect x="1004" y="37" width="150" height="80"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Back body bleed -->
+    <rect x="436" y="37" width="150" height="80"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Side A bleed -->
+    <rect x="580" y="37" width="430" height="80"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Side B bleed -->
+    <rect x="12" y="37" width="430" height="80"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Glue flap bleed -->
+    <rect x="-3" y="37" width="21" height="80"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Top tuck flap bleed -->
+    <rect x="1004" y="-3" width="150" height="46"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Bottom tuck flap bleed -->
+    <rect x="1004" y="111" width="150" height="46"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <!-- Dust flap bleeds -->
+    <rect x="12" y="-3" width="66" height="46"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <rect x="944" y="-3" width="66" height="46"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <rect x="12" y="111" width="66" height="46"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+    <rect x="944" y="111" width="66" height="46"
+          fill="none" stroke="#FF00FF" stroke-width="0.25" stroke-dasharray="2,2"/>
+
+    <!-- ═══════════════════════════════════════════════
+         FOLD LAYER — Score lines (blue dashed)
+    ═══════════════════════════════════════════════ -->
+    <!-- Vertical fold lines between panels -->
+    <!-- Glue flap | Side B: x=15 -->
+    <line x1="15" y1="0" x2="15" y2="154" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+    <!-- Side B | Back: x=439 -->
+    <line x1="439" y1="0" x2="439" y2="154" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+    <!-- Back | Side A: x=583 -->
+    <line x1="583" y1="0" x2="583" y2="154" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+    <!-- Side A | Front: x=1007 -->
+    <line x1="1007" y1="0" x2="1007" y2="154" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+
+    <!-- Horizontal fold lines (body top = y=40, only where flaps connect) -->
+    <!-- Side B top dust fold: x=15 to x=75, y=40 -->
+    <line x1="15" y1="40" x2="75" y2="40" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+    <!-- Side A top dust fold: x=947 to x=1007, y=40 -->
+    <line x1="947" y1="40" x2="1007" y2="40" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+    <!-- Front top tuck fold: x=1007 to x=1151, y=40 -->
+    <line x1="1007" y1="40" x2="1151" y2="40" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+
+    <!-- Horizontal fold lines (body bottom = y=114) -->
+    <!-- Side B bottom dust fold: x=15 to x=75, y=114 -->
+    <line x1="15" y1="114" x2="75" y2="114" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+    <!-- Side A bottom dust fold: x=947 to x=1007, y=114 -->
+    <line x1="947" y1="114" x2="1007" y2="114" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+    <!-- Front bottom tuck fold: x=1007 to x=1151, y=114 -->
+    <line x1="1007" y1="114" x2="1151" y2="114" stroke="#0000FF" stroke-width="0.25" stroke-dasharray="3,2"/>
+
+    <!-- ═══════════════════════════════════════════════
+         CUT LAYER — Outer cut edges (red solid)
+    ═══════════════════════════════════════════════ -->
+
+    <!-- ── LEFT EDGE: glue flap x=0 ── -->
+    <line x1="0" y1="40" x2="0" y2="114" stroke="#FF0000" stroke-width="0.25"/>
+    <!-- Top of glue flap (cut edge) -->
+    <line x1="0" y1="40" x2="15" y2="40" stroke="#FF0000" stroke-width="0.25"/>
+    <!-- Bottom of glue flap (cut edge) -->
+    <line x1="0" y1="114" x2="15" y2="114" stroke="#FF0000" stroke-width="0.25"/>
+
+    <!-- ── TOP EDGE: cut line at y=40, segments between flap fold regions ── -->
+    <!-- Side B body top (no flap): x=75 to x=439 -->
+    <line x1="75" y1="40" x2="439" y2="40" stroke="#FF0000" stroke-width="0.25"/>
+    <!-- Back panel top (no flap): x=439 to x=583 -->
+    <line x1="439" y1="40" x2="583" y2="40" stroke="#FF0000" stroke-width="0.25"/>
+    <!-- Side A body top (no flap): x=583 to x=947 -->
+    <line x1="583" y1="40" x2="947" y2="40" stroke="#FF0000" stroke-width="0.25"/>
+
+    <!-- ── SIDE B TOP DUST FLAP outer cut ── -->
+    <line x1="15" y1="0" x2="75" y2="0" stroke="#FF0000" stroke-width="0.25"/><!-- top -->
+    <line x1="15" y1="0" x2="15" y2="40" stroke="#FF0000" stroke-width="0.25"/><!-- left -->
+    <line x1="75" y1="0" x2="75" y2="40" stroke="#FF0000" stroke-width="0.25"/><!-- right -->
+
+    <!-- ── SIDE A TOP DUST FLAP outer cut ── -->
+    <line x1="947" y1="0" x2="1007" y2="0" stroke="#FF0000" stroke-width="0.25"/><!-- top -->
+    <line x1="947" y1="0" x2="947" y2="40" stroke="#FF0000" stroke-width="0.25"/><!-- left -->
+    <line x1="1007" y1="0" x2="1007" y2="40" stroke="#FF0000" stroke-width="0.25"/><!-- right -->
+
+    <!-- ── FRONT TOP TUCK FLAP outer cut (complex tab shape) ── -->
+    <path d="M 1007 40
+             V 16 Q 1007 11 1012 11
+             H 1025 V 6 Q 1025 0 1031 0
+             H 1127 Q 1133 0 1133 6
+             V 11 H 1146 Q 1151 11 1151 16
+             V 40"
+          fill="none" stroke="#FF0000" stroke-width="0.25"/>
+
+    <!-- ── RIGHT EDGE: front panel x=1151 ── -->
+    <line x1="1151" y1="40" x2="1151" y2="114" stroke="#FF0000" stroke-width="0.25"/>
+
+    <!-- ── BOTTOM EDGE: cut line at y=114 ── -->
+    <line x1="75" y1="114" x2="439" y2="114" stroke="#FF0000" stroke-width="0.25"/>
+    <line x1="439" y1="114" x2="583" y2="114" stroke="#FF0000" stroke-width="0.25"/>
+    <line x1="583" y1="114" x2="947" y2="114" stroke="#FF0000" stroke-width="0.25"/>
+
+    <!-- ── SIDE B BOTTOM DUST FLAP outer cut ── -->
+    <line x1="15" y1="154" x2="75" y2="154" stroke="#FF0000" stroke-width="0.25"/><!-- bottom -->
+    <line x1="15" y1="114" x2="15" y2="154" stroke="#FF0000" stroke-width="0.25"/><!-- left -->
+    <line x1="75" y1="114" x2="75" y2="154" stroke="#FF0000" stroke-width="0.25"/><!-- right -->
+
+    <!-- ── SIDE A BOTTOM DUST FLAP outer cut ── -->
+    <line x1="947" y1="154" x2="1007" y2="154" stroke="#FF0000" stroke-width="0.25"/><!-- bottom -->
+    <line x1="947" y1="114" x2="947" y2="154" stroke="#FF0000" stroke-width="0.25"/><!-- left -->
+    <line x1="1007" y1="114" x2="1007" y2="154" stroke="#FF0000" stroke-width="0.25"/><!-- right -->
+
+    <!-- ── FRONT BOTTOM TUCK FLAP outer cut (complex tab shape) ── -->
+    <path d="M 1007 114
+             V 138 Q 1007 143 1012 143
+             H 1025 V 148 Q 1025 154 1031 154
+             H 1127 Q 1133 154 1133 148
+             V 143 H 1146 Q 1151 143 1151 138
+             V 114"
+          fill="none" stroke="#FF0000" stroke-width="0.25"/>
+
+    <!-- ═══════════════════════════════════════════════
+         PANEL LABELS (gray, small — for reference only)
+    ═══════════════════════════════════════════════ -->
+    <text x="7.5" y="77" text-anchor="middle" transform="rotate(-90, 7.5, 77)"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="4"
+          letter-spacing="1" fill="#AAAAAA">GLUE</text>
+
+    <text x="45" y="16" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="4"
+          letter-spacing="1" fill="#AAAAAA">DUST ↑</text>
+    <text x="227" y="36" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="3.5"
+          letter-spacing="1" fill="#AAAAAA">SIDE B — 424mm</text>
+    <text x="45" y="138" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="4"
+          letter-spacing="1" fill="#AAAAAA">DUST ↓</text>
+
+    <text x="511" y="36" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="3.5"
+          letter-spacing="1" fill="#AAAAAA">BACK — 144mm</text>
+
+    <text x="977" y="16" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="4"
+          letter-spacing="1" fill="#AAAAAA">DUST ↑</text>
+    <text x="795" y="36" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="3.5"
+          letter-spacing="1" fill="#AAAAAA">SIDE A — 424mm</text>
+    <text x="977" y="138" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="4"
+          letter-spacing="1" fill="#AAAAAA">DUST ↓</text>
+
+    <text x="1079" y="16" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="4"
+          letter-spacing="1" fill="#AAAAAA">TUCK ↑</text>
+    <text x="1079" y="36" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="3.5"
+          letter-spacing="1" fill="#AAAAAA">FRONT — 144mm</text>
+    <text x="1079" y="138" text-anchor="middle"
+          font-family="Montserrat, sans-serif" font-weight="600" font-size="4"
+          letter-spacing="1" fill="#AAAAAA">TUCK ↓</text>
+  </svg>
+
+  <!-- ═══════════════════════════════════════════════
+       ANNOTATION BLOCK
+  ═══════════════════════════════════════════════ -->
+  <div id="annotation">
+    <h2>The Square Bar — 12-Pack Box Dieline Specification</h2>
+    <div class="cols">
+      <div class="col">
+        <h3>Box Dimensions (Interior)</h3>
+        <ul>
+          <li>Width: 144mm (2 bars × 70mm + 4mm tolerance)</li>
+          <li>Length: 424mm (6 bars × 70mm + 4mm tolerance)</li>
+          <li>Height: 74mm (bar height 70mm + 4mm)</li>
+          <li>Cardboard: 2mm thickness</li>
+          <li>Bars: 12 total — 2 columns × 6 rows, standing upright</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Panel Dimensions (mm)</h3>
+        <ul>
+          <li>Front / Back: 144 × 74</li>
+          <li>Side A / Side B: 424 × 74</li>
+          <li>Glue flap: 15 × 74</li>
+          <li>Top + Bottom tuck flaps: 144 × 40 (with 106mm tab, r=6mm)</li>
+          <li>Dust flaps (×4): 60 × 40</li>
+          <li>Dieline total: 1151 × 154mm</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Layer Legend</h3>
+        <div class="legend">
+          <div class="legend-item"><div class="legend-swatch" style="background:#FF0000"></div>CUT — outer cut edge</div>
+          <div class="legend-item"><div class="legend-swatch" style="background:#0000FF; height:0; border-top:2px dashed #0000FF"></div>FOLD — score lines</div>
+          <div class="legend-item"><div class="legend-swatch" style="background:#00FF00; height:0; border-top:2px dashed #00FF00"></div>SAFE ZONE — 5mm inset</div>
+          <div class="legend-item"><div class="legend-swatch" style="background:#FF00FF; height:0; border-top:2px dashed #FF00FF"></div>BLEED — 3mm outset</div>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Assembly Instructions</h3>
+        <ul>
+          <li>1. Score all blue dashed fold lines</li>
+          <li>2. Apply glue to GLUE flap (hatch area)</li>
+          <li>3. Fold Side A and Side B inward</li>
+          <li>4. Glue flap adheres to inner edge of Front</li>
+          <li>5. Fold dust flaps inward first at top/bottom</li>
+          <li>6. Insert tuck tabs to close top and bottom</li>
+          <li>7. Fill with 12 bars (2 col × 6 rows, upright)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end #dieline-frame -->
+</body>
+</html>
